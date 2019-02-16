@@ -7,8 +7,12 @@
     font-family: "Spectral", "Cambria" , "Times New Roman" , serif;
 }
 
+body {
+    background-color: #ac413a;
+}
+
 .barramenu {
-    width: 80%;
+    width: 90%;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -16,27 +20,29 @@
 }
 
 header {
-    background: tomato;
+    background: #71754C;
     padding: 5px 0;
+    border-bottom: 1px solid #FBCEBA;
 }
 
 .menu {
     display: block;
-    color: #fff;
-    font-size: 30px;
+    color: #FBCEBA;
+    font-size: 35px;
 }
 
 header nav {
     position: fixed;
-    background: tomato;
     width: 100%;
     height: 100vh;
     left: 0;
     top: -100%;
     transition: all 0.5s;
+    z-index: 4;
 }
 
 header nav ul {
+    background-color: #FBCEBA;
     width: 100%;
     height: 100%;
     display: flex;
@@ -46,20 +52,717 @@ header nav ul {
 }
 
 header nav ul li {
-    margin: 20px 0;
+    margin: 10px 0;
 }
 
 header nav ul li a {
+    color: #ac413a;
     text-transform: uppercase;
     font-size: 25px;
+    font-weight: bold;
 }
 
 .cerrar {
     display: block;
-    color: #fff;
+    color: #ac413a;
     font-size: 30px;
     position: absolute;
     left: 10%;
     top: 20px;
 }
 
+.slider {
+    display: flex;
+    margin: auto;
+    width: 98%;
+    background: #ac413a;
+    margin-top: 5px;
+}
+
+.slider .slide {
+    height: 100vh;
+    position: relative;
+    z-index: 2;
+    border: 1px solid #ac413a;
+    background-size: cover;
+    background-position: center center;
+    width: 30%;
+    opacity: 0.7;
+    transition: width 0.8s ease, opacity 0.5s ease;
+}
+
+.slider .slide:hover {
+    width: 300%;
+    opacity: 1;
+}
+
+.fotouno {
+    background-image: url("../images/fotounomobile.jpg");
+}
+
+.fotodos {
+    background-image: url("../images/fotodosmobile.jpg");
+}
+
+.fototres {
+    background-image: url("../images/fototresmobile.jpg");
+}
+
+.fotocuatro {
+    background-image: url("../images/fotocuatromobile.jpg");
+}
+
+.fotocinco {
+    background-image: url("../images/fotocincomobile.jpg");
+}
+
+.fotoseis {
+    background-image: url("../images/fotoseismobile.jpg");
+}
+
+.fotosiete {
+    background-image: url("../images/fotosietemobile.jpg");
+}
+
+.audiovideo { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+video {
+    max-width: 99%;
+    height: auto;
+}
+
+.video { 
+    display: inline-block;
+    text-align: center;
+    width: 98%;
+    margin-top: 10px;
+    padding-top: 10px;
+    position: relative;
+}
+
+.fa-youtube { 
+    color: #AC413A;
+    font-size: 35px;
+    position: absolute;
+    top: 10px;
+    right: 8px;
+    z-index: 1;
+}
+
+.audio {
+    margin-top: 10px;
+    padding-top: 10px;
+}
+
+.audio h1 {
+    font-size: 16px;
+    text-align: center;
+    color: #FBCEBA;
+    padding-bottom:10px;
+    word-spacing: 2px;
+}
+
+.audio h1 span{
+    font-size: 20px;
+}
+
+footer {
+    width: 100%;
+    margin-top: 10px;
+    background-color: #71754C;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-top: 1px solid #FBCEBA;
+}
+
+.menufooter ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.menufooter ul li {
+    padding-right: 3px;
+    margin-left: 5px;
+
+}
+.menufooter ul li a {
+    font-size: 12px;
+    color: #FBCEBA;
+}
+
+.liborde {
+    border-right: 1px solid #FBCEBA;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.footer .fab { font-size: 20px;
+    color: #FBCEBA;
+    margin-right: 10px;
+}
+
+.integrantes .slider .slide {
+    height: 50vh;
+    position: relative;
+    z-index: 2;
+    border: 1px solid #ac413a;
+    background-size: cover;
+    background-position: center center;
+    width: 30%;
+    opacity: 0.7;
+    transition: width 0.8s ease, opacity 0.5s ease;
+}
+
+.integrantes .slider .slide:hover {
+    width: 120%;
+    opacity: 1;
+}
+
+.integranteuno {
+    background-image: url("../images/florencemobile.jpg");
+}
+
+.integrantedos {
+    background-image: url("../images/isabelladesktop.jpg");
+}
+
+.integrantetres {
+    background-image: url("../images/robertmobile.jpg");
+}
+
+.integrantecuatro {
+    background-image: url("../images/chrisdesktop.jpg");
+}
+
+.integrantecinco {
+    background-image: url("../images/markmobile.jpg");
+}
+
+.integranteseis {
+    background-image: url("../images/tomdesktop.jpg");
+}
+
+.integrantesiete {
+    background-image: url("../images/rustymobile.jpg");
+}
+
+.nombre {
+    position: absolute; 
+    bottom: 0; 
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.8);
+    color: #f1f1f1; 
+    width: 100%;
+    transition: .5s ease;
+    opacity: 0;
+    color: #FBCEBA;
+    font-size: 14px;
+    padding: 3px;
+    text-align: center;
+}
+
+.integrantes .slider .slide:active .nombre {
+    opacity: 1;
+}
+
+.biografia {
+    width: 95%;
+    margin: auto;
+    padding: 5px 0;
+}
+
+.biografia p { 
+    font-size: 14px;
+    text-align: justify;
+    color: #FBCEBA;
+    text-indent: 15px;
+    padding-top: 15px;
+    line-height: 1.5;
+}
+
+.discografia {
+    width: 100%;
+    padding-top: 20px;
+}
+
+.album {
+    position: relative;
+    width: 85%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.cover {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 2px solid #FBCEBA;
+}
+
+.playlist {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(251,206,186,0.8);
+}
+
+.album:hover .playlist {
+    opacity: 1;
+}
+
+.list {
+    color: #AC413A;
+    font-size: 16px;
+    position: absolute;
+    width: 95%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+h2 {
+    font-size: 16px;
+    padding: 15px 0;
+}
+
+article img {
+    display:none;
+}
+
+.contacto {
+    width: 95%;
+    margin: 20px auto; 
+}
+
+.formulario {
+    width: 100%;
+    text-align: left;
+}
+
+fieldset {
+    background-color: #FBCEBA;
+    border: 3px solid white;
+    padding: 5px;
+}
+
+.dato {
+    color: #ac413a;
+    font-size: 15px;
+    width: 98%;
+    padding: 5px;
+    margin: auto;
+}
+
+.completar {
+    padding: 5px;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ac413a;
+    background-color: rgba(255,240,237,0.5);
+    outline: none;
+}
+
+input[type=text]:focus {
+  border: 1px solid #ac413a;
+}
+
+input[type=email]:focus {
+  border: 1px solid #ac413a;
+}
+
+textarea {
+    width: 100%;
+    height: 180px;
+    padding: 10px;
+    border: 1px solid #ac413a;
+    outline: none;
+}
+
+textarea:focus {
+    border: 2px solid #ac413a;
+}
+
+::placeholder {
+    color: #ac413a;
+}
+
+textarea::placeholder {
+    color: #ac413a;
+    font-size: 15px;
+}
+
+button { 
+    background-color: #FBCEBA;
+    border: none;
+    border: 1px solid #ac413a;
+    color: #ac413a;
+    padding: 5px 10px;
+    margin: 3px 15px;
+    text-align: center;
+    font-size: 15px;
+    transition-duration: 0.4s;
+}
+
+button:hover {
+    background-color: #ac413a;
+    color: #FBCEBA;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.3), 0 6px 20px 0 rgba(0,0,0,0.3);
+}
+
+.boton {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+
+
+/* ----   ADAPTACIÓN A DESKTOP   ---- */
+
+
+
+
+@media screen and (min-width: 769px){
+    header div .menu {
+        display: none;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .barramenu {
+        width: 100%;
+        display: flex;
+    }
+
+    header {
+        background-image: url("../images/imagenprincipal.jpg");
+        background-repeat: no-repeat;
+        padding-top: 330px;
+        padding-bottom: 0;
+        border-bottom: 2px solid #FBCEBA;
+    }
+
+    header div nav {
+        position: static;
+        background-color: #BF5D54;
+        width: 100%;
+        height: 50px;
+        left: 0;
+        top: 0;
+        transition: 0;
+        border-top: 1px solid #FBCEBA;
+    }
+
+    header nav ul {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-end;
+    }
+
+    header div nav ul li {
+        margin: auto;
+    }
+
+    header nav ul li a {
+        font-size: 35px;
+        font-weight: normal;
+        letter-spacing: 3px;
+        position: relative;
+    }
+
+    header div nav ul li a:after{
+        content: '';
+        width: 0%;
+        transition: all 0.3s ease;
+        left: 50%;
+    }
+
+    header div nav ul li a:before{
+        content: '';
+        width: 0%;
+        transition: all 0.3s ease;
+        left: 50%;
+    }
+
+    header div nav ul li a:hover:after{
+        content: '';
+        position: absolute;
+        bottom: 0px;
+        left: 50%;
+        background: #AC413A;
+        height: 3px;
+        width: 50%;
+    }
+
+    header div nav ul li a:hover:before{
+        content: '';
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        background: #AC413A;
+        height: 3px;
+        width: 50%;
+    }
+
+    header div .cerrar {
+        display: none;
+    }
+
+    .slider {
+        margin-top: 10px;
+        padding-bottom: 15px;
+        border-bottom: 2px solid #FBCEBA;
+    }
+
+    .slider .slide {
+        border: 2px solid #ac413a;
+    }
+
+    .slider .slide:hover {
+        width: 200%;
+        opacity: 2;
+    }
+
+    .fotouno {
+        background-image: url("../images/fotounodesktop.jpg");
+    }
+
+    .fotodos {
+        background-image: url("../images/fotodosdesktop.jpg");
+    }
+
+    .fotoseis {
+        background-image: url("../images/fotoseisdesktop.jpg");
+    }
+
+    .fotosiete {
+        background-image: url("../images/fotosietedesktop.jpg");
+    }
+
+    .audiovideo {
+        display: flex;
+        flex-direction: row;
+        margin-top: 10px;
+    }
+
+    .video { 
+        width: 60%;
+        margin-left: 10px;
+        padding-right: 10px;
+    }
+
+    .fa-youtube { 
+        font-size: 35px;
+        position: absolute;
+        top:15px;
+        right: 25px;
+        z-index: 1;
+        color: #FBCEBA;
+    }
+
+    .frame {
+        width: 95%;
+    }
+
+    .audio {
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0;
+        border-left: 2px solid #FBCEBA;
+    }
+
+    .audio h1 {
+        font-size: 22px;
+        padding-bottom: 15px;
+    }
+
+    .audio h1 span{
+        font-size: 24px;
+    }
+
+    footer {
+        padding: 0 5px;
+    }
+
+    .fab:hover {
+        color: #AC413A;
+    }
+
+    .menufooter nav ul li a {
+        position: relative;
+        font-size: 20px;
+    }
+
+    .menufooter nav ul li a:after{
+        content: '';
+        width: 0%;
+        transition: all 0.3s ease;
+        left: 50%;
+    }
+
+    .menufooter nav ul li a:before{
+        content: '';
+        width: 0%;
+        transition: all 0.3s ease;
+        left: 50%;
+    }
+
+    .menufooter nav ul li a:hover:after{
+        content: '';
+        position: absolute;
+        bottom: 0px;
+        left: 50%;
+        background: #FBCEBA;
+        height: 1px;
+        width: 50%;
+    }
+
+    .menufooter nav ul li a:hover:before{
+        content: '';
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        background: #FBCEBA;
+        height: 1px;
+        width: 50%;
+    }
+
+    .footer .fab { 
+        font-size: 30px;
+    }
+
+    .menufooter ul li {
+        padding-right: 7px;
+        margin-left: 7px;
+    }
+
+    .integrantes .slider .slide {
+        border: 2px solid #ac413a;
+    }
+
+    .integrantes .slider .slide:hover {
+        width: 70%;
+        opacity: 2;
+    }
+
+    .integranteuno {
+        background-image: url("../images/florencedesktop.jpg");
+    }
+
+    .integrantedos {
+        background-image: url("../images/isabelladesktop.jpg");
+    }
+
+    .integrantetres {
+        background-image: url("../images/robertdesktop.jpg");
+    }
+
+    .integrantecuatro {
+        background-image: url("../images/chrisdesktop.jpg");
+    }
+
+    .integrantecinco {
+        background-image: url("../images/markdesktop.jpg");
+    }
+
+    .integranteseis {
+        background-image: url("../images/tomdesktop.jpg");
+    }
+
+    .integrantesiete {
+        background-image: url("../images/rustydesktop.jpg");
+    }
+
+    .integrantes .slider .slide:hover .nombre {
+      opacity: 1;
+    }
+
+    .nombre {
+        font-size: 18px;
+        padding: 5px;
+    }
+
+    .biografia {
+        font-size: 30px;
+        padding-bottom: 15px;
+        padding-top: 0;
+    }
+
+    .biografia p {
+        font-size: 16px;
+    }
+
+    .discografia {
+        width: 95%;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-content: space-around;
+    }
+
+    .album {
+        width: 45%;
+        margin-top: 20px;
+    }
+
+    .list {
+        font-size: 25px;
+        line-height: 35px;
+    }
+
+    h2 {
+        font-size: 28px;
+        padding-bottom: 25px;
+        text-decoration: underline;
+    }
+
+    article img {
+        display: inline-block;
+    }
+
+    .contacto {
+        width: 95%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .formulario {
+        width: 50%;
+    }
+
+    .dato {
+        font-size: 18px;
+        width: 95%;
+    }
+}
